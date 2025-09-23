@@ -9,9 +9,9 @@ pipeline {
         DOCKER_TAG = "v1.0"
     }
     
-    // tools {
-    //     nodejs 'node' // Закомментировано до настройки NodeJS в Global Tools
-    // }
+    tools {
+        nodejs 'node' // Соответствует имени в Global Tool Configuration
+    }
     
     stages {
         stage('Checkout') {
